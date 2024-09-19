@@ -1,0 +1,28 @@
+/*SWWebDev September 19*/
+a:link{
+  color:rgb(42, 136, 18)
+}
+a:visited{
+  color:rgb(47, 79, 59)
+}
+a:hover{
+  color:rgb(197, 216, 22)
+}
+a:active{
+  color:rgb(57, 109, 6)
+}
+header{
+  background-color: rgb(214, 240, 185);
+}
+footer{
+  background-color: rgb(214, 240, 185);
+}
+p{
+  font-size: 20;
+}
+ul{
+  font-size: 20;
+}
+li{
+  font-size: 20;
+}
