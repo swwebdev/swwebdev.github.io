@@ -1,0 +1,12 @@
+/* Practice CustomFonts Style Sheet */
+
+@font-face {
+    font-family: 'kingthings';
+    src: url('../fonts/Kingthings_Calligraphica_2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	font-family: 'kingthings', "Times New Roman", serif;
+}
