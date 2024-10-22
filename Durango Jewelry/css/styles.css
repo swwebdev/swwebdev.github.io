@@ -1,0 +1,71 @@
+
+/* Sarah Wilson October 22 */
+
+.pacifico-regular {
+	font-family: "Pacifico", cursive;
+	font-weight: 400;
+	font-style: normal;
+  }
+
+@font-face {
+	font-family: Roboto;
+	src: url(../fonts/Roboto-LightItalic-webfont.woff);
+}
+
+h1{
+	font-family: Pacifico, Arial, sans-serif;
+	font-size: 4em;
+}
+
+h2{
+	font-family: Roboto, Arial, sans-serif;
+	font-style: italic;
+	font-size: 2em;
+}
+
+img[src="images/necklace.jpg"]{
+	float: left;
+	border-radius: 50%;
+}  
+
+nav ul{
+	list-style-type: none;
+	font-size: 1.5em;
+	clear: both;
+}
+
+.addrightmargin{
+	margin-right: 10%;
+}
+
+body{
+	background-image: url(../images/jewelry.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+}
+	 
+#outerwrapper {	
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 15%;
+	background: rgba(243,205,170, 0.4);
+}
+
+main{
+	background: linear-gradient(#FFFFFF,#F0F9E6);
+	padding: 10px;
+	margin: 20px;
+	border-radius: 2em;
+	font-size: 1.25em;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+footer{
+	font-size: 1em;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+
