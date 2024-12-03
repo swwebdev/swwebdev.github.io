@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- Sarah Wilson
+  August 22-->
+<html Lang="en">
+  <head>
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contactstyle.css" />
+    <meta name="author" content="Sarah Wilson" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Sarah Wilson software app designer Boise Idaho" />
+    <meta name="keywords" content="client-side server-side software developer programmer graphic design animation" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="headerwrap">
+      <!--Replace H1 with an image-->
+      <a href="index.html"><h1 class="logo">Sarah Wilson</h1></a>
+        <nav role="navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li class="activePage"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>   
+      <main>
+        <div class="flexbox-container">
+          <div class="child child1">
+            <h1>Contact</h1>
+            <form action="mailto:sarahwilson@my.cwi.edu?subject=Personal%20Portfolio%20Mail" enctype="text/plain" method="POST">
+              <fieldset>
+              <legend>How do I contact you?</legend>
+                  <label for="company">Company:</label>
+                  <input type="text" name="company" id="company" value=""/>
+                  <div>
+      
+                  </div>
+                  <label for="person-to-contact">Person to contact:</label>
+                  <input type="text" name="person-to-contact" id="person-to-contact" value=""/>
+                  <div>
+      
+                  </div>
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" placeholder="Email" required/>
+                  <div>
+      
+                  </div>
+                  <label for="phone">Phone Number:</label>
+                  <input type="tel" name="phone" id="phone" placeholder="000-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
+                  <div>
+      
+                  </div>
+              </fieldset>
+      
+              <fieldset>
+                  <legend>What opportunities are available at your company?</legend>
+                   <label for="type-of-position">Type of Position:</label>
+                   <select name="type-of-position" id="type-of-position">
+                    <option value="Internship">Internship</option>
+                    <option value="Part-time">Part-time</option>
+                    <option value="Full-time">Full-Time</option>
+                    <option value="Contract">Contract</option>
+                    <option value="Temporary">Temporary</option>
+                    <option value="On call">On call</option>
+                   </select>
+      
+                  <p>How did you find me?</p> 
+                  <input type="radio" name="find-me" id="LinkedIn" value="LinkedIn"/> <label for="LinkedIn">LinkedIn</label>
+      
+                  <input type="radio" name="find-me" id="job-fair" value="job-fair"/> <label for="job-fair">Job Fair</label>
+      
+                  <input type="radio" name="find-me" id="cwi-corp-part" value="cwi-corp-part"/> <label for="cwi-corp-part">CWI Corporate Partner</label>
+      
+                  <div>
+                      <textarea name="interview-prep">How should I prepare for the interview?</textarea>
+      
+                  </div>
+              </fieldset>
+          <input type="submit" id="submit" value="Submit" class="btn">
+           </form>
+      </div>
+      </div>
+      </main>
+    <footer>
+      <a target="_blank" href="https://github.com/"><img src="images/iconmonstr-github-3.svg" alt="Github Link" width="50"></a>
+      <a target="_blank" href="https://www.linkedin.com/"><img src="images/iconmonstr-linkedin-3.svg" alt="LinkedIn Link" width="50"></a>
+    </footer>
+  </div>
+  </body>
+</html>

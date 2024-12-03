@@ -1,0 +1,185 @@
+@font-face {
+  font-family: 'coinyregular';
+  src: url('../fonts/coiny-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+a{
+  text-decoration: none;
+}
+
+.logo{
+  font-family: 'coinyregular', Georgia, sans-serif;
+  font-size: 2em;
+}
+
+.logo:hover{
+  color: rgb(115, 180, 255);
+  transition: color 300ms linear;
+}
+
+.lilita-one-regular {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+nav ul li{
+  list-style-type: none;
+  background-color: rgb(115, 180, 255);
+  padding: 20px 20px;
+  margin: 20px;
+  border-radius: 40%;
+  text-align: center;
+  width: 100px;
+  font-size: 1.3em;
+  font-family: 'Lilita One', Georgia, serif;
+  filter: drop-shadow(0px 4px 4px #a2c7ff);
+}
+
+h1{
+  font-family: 'Lilita One', Georgia, serif;
+  font-weight: 100;
+  color: rgb(75, 152, 240);
+}
+
+h3{
+  font-family: 'Lilita One', Georgia, serif;
+  font-weight: 100;
+  color: rgb(75, 152, 240);
+}
+
+.activePage{
+  background-color: #a2c7ff;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav a{
+  text-decoration: none;
+  color:rgb(255, 255, 255)
+}
+
+nav ul li:hover{
+  background-color: rgb(82, 135, 252);
+  transition: background-color 300ms linear;
+}
+
+.headerwrap{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.flexbox-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: rgb(182, 221, 255);
+  border-radius: 5%;
+  padding: 20px 0 20px 0;
+  filter: drop-shadow(5px 5px 4px #86a5d4a9);
+}
+
+.child{
+  padding: 40px;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 1000px;
+}
+
+footer{
+  text-align: center;
+  font-family: 'Montserrat', Georgia, serif;
+  color:rgb(3, 50, 121)
+}
+
+footer a{
+  color: #517fe4;
+}
+
+p{
+  font-family: 'Montserrat', Georgia, serif;
+  color:rgb(10, 70, 160)
+}
+
+body{
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(225, 239, 255));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.projectExamples{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+
+.projectBox{
+  background: #ffffff;
+  filter: drop-shadow(5px 5px 4px #86a5d4a9); 
+  border-radius: 10%; 
+  padding: 5px;
+  margin: 10px;
+  width: 40%;
+  align-items: center;
+  text-align: center;
+}
+
+.projectBox a.button {
+  display: block;
+  width: 40%;
+  margin: 10px auto;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', Georgia, serif;
+  font-size: smaller;
+  color: rgb(255, 255, 255);
+  background: rgb(82, 135, 252);
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 90px;
+  padding:9px;
+}
+
+.projectBox h2 {
+  font-family: 'Lilita One', Georgia, serif;
+  font-weight: 100;
+  font-size: 1.2em;
+  color: rgb(75, 152, 240);
+}
+
+.videoLink{
+  display: block;
+  width: 20%;
+  margin: 10px auto;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', Georgia, serif;
+  font-size: smaller;
+  color: rgb(255, 255, 255);
+  background: rgb(82, 135, 252);
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 90px;
+  padding:9px;
+}

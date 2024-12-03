@@ -1,0 +1,32 @@
+table, th, td {
+  border-collapse: collapse;
+  padding: 6px;
+  padding-right: 20px;
+}
+
+th {
+  background-color: rgb(75, 152, 240);
+  font-family: 'Lilita One', Georgia, serif;
+  font-weight: 100;
+  padding: 10px;
+  color: white;
+}
+
+caption{
+  text-align: left;
+}
+
+td {
+  background-color: rgb(255, 255, 255);
+  font-family: 'Montserrat', Georgia, serif;
+  font-size: smaller;
+  color: rgb(10, 70, 160);
+}
+
+tr:nth-child(even) td{
+  background-color: rgb(225, 239, 255);
+}
+
+h3{
+  padding-left: 15px;
+}
