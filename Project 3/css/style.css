@@ -1,0 +1,131 @@
+/*----------------Color Variables----------------*/
+:root{
+  --main-green:rgb(122, 226, 61);
+  --accent-pink:rgb(223, 18, 172);
+  --hover-pink:rgb(241, 113, 220);  
+}
+/*----------------Global Styles----------------*/
+.audiowide-regular {
+  font-family: "Audiowide", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.zain-light {
+  font-family: "Zain", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+h1, h2 {
+  font-family: Audiowide, Georgia, sans-serif;
+}
+h2{
+  color: var(--accent-pink);
+}
+p {
+  font-family: Zain, Georgia, sans-serif;
+  font-size: 1.1em;
+}
+nav ul {
+  font-family: Audiowide, Georgia, sans-serif;
+  font-weight: bold;
+  font-size: 1.3em;
+  list-style-type: none;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+}
+#logo{
+  text-decoration: none;
+  color:white;
+  transition: all 0.2s ease 0s;
+}
+#logo:hover{
+  color:var(--accent-pink);
+}
+body {
+  margin: 0px;
+  background-image: 
+  linear-gradient(hsl(0, 0%, 100%), 20%, hsl(0, 0%, 100%), 80%, rgba(255, 255, 255, 0)),
+  url("../images/planetpattern2.png");
+  background-attachment: fixed;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background-color:var(--main-green);
+}
+nav li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+nav li a {
+  transition: all 0.3s ease 0s;
+}
+nav li a:hover {
+  color:var(--accent-pink);
+}
+.container{
+  display: flex;
+  padding: 5% 10%;
+}
+.subcontainer{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+footer{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color:var(--accent-pink);
+}
+#buttonrow{
+  padding-left: 85px;
+}
+.customButton{
+  background-color:var(--accent-pink);
+  color: white;
+  font-size: 1.5em;
+  border: none;
+  padding: 5px 20px 7px 20px;
+  border-radius: 12px;
+  transition: all 0.3s ease 0s;
+}
+.customButton:hover{
+  background-color:var(--hover-pink);
+}
+.confirm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formContainer{
+  font-family: "Zain", serif;
+  font-size: 1.5em;
+  color:var(--accent-pink);
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+/*----------------Media Queries----------------*/
+/*Phone*/
+@media (min-width: 350px) {
+  .desktop{
+    display: none;
+  }
+}
+/*Tablet*/
+@media (min-width: 700px) {
+  .desktop{
+    display: block;
+  }
+}
+/*Desktop*/
+@media (min-width: 1100px) {
+
+}
