@@ -1,0 +1,28 @@
+#form{
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.input-control {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.input-control.success input{
+  border-color: rgb(15, 206, 15);
+}
+.input-control.error input{
+  border-color: rgb(231, 21, 21);
+}
+.input-control.error div{
+  color: rgb(231, 21, 21);
+  font-family: "Zain", serif;
+}
+.input-control label{
+  font-family: "Zain", serif;
+  font-size: 1.2em;
+}
+#form button{
+  margin-top: 20px;
+  margin-left: 80px;
+}
