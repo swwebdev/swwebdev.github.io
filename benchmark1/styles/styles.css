@@ -91,6 +91,7 @@ footer{
 }
 .submitbutton:hover {
   background-color: var(--buttonhover);
+  cursor: pointer;
 }
 
 .inventorybutton {
@@ -105,6 +106,7 @@ footer{
 }
 .inventorybutton:hover {
   background-color: var(--buttonhover);
+  cursor: pointer;
 }
 
 #logo {
