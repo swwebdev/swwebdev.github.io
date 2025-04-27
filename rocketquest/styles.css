@@ -1,0 +1,75 @@
+:root {
+  --titleoutline: #5c08bb;
+  --navcolor: #aa009c;
+  --blurbcolor: #dd33c6;
+}
+
+@font-face {
+  font-family: 'C64';
+  src: url(fonts/C64_Pro_Mono-STYLE.woff);
+  font-style: normal;
+  font-weight: 100;
+}
+
+.fakeimg {
+  height: 400px;
+  background: rgb(194, 194, 194);
+}
+body {
+  margin: 0px;
+  background-image: 
+  linear-gradient(hsla(0, 0%, 100%, 0), 20%, hsla(300, 60%, 64%, 0.288), 80%, rgb(168, 49, 172)),
+  url("images/planetpattern2.png");
+  background-attachment: fixed;
+}
+
+.navcolor {
+  background-color: var(--navcolor)
+}
+
+.headerimage {
+  background-image: url('images/testheader.png');
+  background-size: cover;
+}
+
+.C64 {
+  font-family: 'C64', 'Arial';
+  color: #ffffff;
+  filter: drop-shadow(0px 5px 10px #d30d98);
+  
+}
+
+.blurb {
+  background-color: var(--blurbcolor);
+  color: white;
+  border-radius: 30px;
+  padding: 40px;
+  margin: 40px;
+  font-size: large;
+  filter: drop-shadow(5px 5px 12px #cf4ca8);
+}
+
+.iconholder {
+  padding: 100px;
+  filter: drop-shadow(5px 5px 12px #cf4ca8);
+}
+
+.shadowtitle {
+  filter: drop-shadow(5px 4px 0px #5e05ca);
+  text-shadow: 0px 1px var(--titleoutline), 0px -1px var(--titleoutline), 1px 0px var(--titleoutline), -1px 0px var(--titleoutline), 0px 0px 6px var(--titleoutline);
+}
+
+.linkbutton {
+  display: block;
+  text-align: center;
+  color: #da2bbc;
+  background-color: #ffffff;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-family: 'C64', 'Arial';
+}
+
+.linkbutton:hover {
+  color: #f16edc;
+}
