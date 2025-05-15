@@ -2,7 +2,7 @@ Vue.createApp({
   data() {
     return {
       toggle: false,
-      galaxyName: 'null',
+      galaxyName: null,
       adoptions: [
         {
           id: 1,
