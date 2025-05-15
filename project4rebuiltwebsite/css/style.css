@@ -1,0 +1,171 @@
+/*----------------Color Variables----------------*/
+:root{
+  --main-green:rgb(90, 209, 20);
+  --accent-green:rgb(0, 124, 48);
+  --accent-pink:rgb(223, 18, 172);
+  --hover-pink:rgb(241, 113, 220);
+  --accr-pink:rgb(255, 235, 255);
+  --adopt-box:rgb(194, 238, 169);    
+}
+
+/*----------------Global Styles----------------*/
+.audiowide-regular {
+  font-family: "Audiowide", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.zain-light {
+  font-family: "Zain", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  margin: 0px;
+  background-image: 
+  linear-gradient(hsl(0, 0%, 100%), 20%, hsl(0, 0%, 100%), 80%, rgba(255, 255, 255, 0)),
+  url("../images/planetpattern2.png");
+  background-attachment: fixed;
+}
+
+h1, h2 {
+  font-family: Audiowide, Georgia, sans-serif;
+}
+
+h2{
+  color: var(--accent-pink);
+}
+p {
+  font-family: Zain, Georgia, sans-serif;
+  font-size: 1.2em;
+}
+
+.navstyle {
+  background-color: var(--main-green);
+  font-family: "Audiowide";
+}
+
+.navlinkstyle {
+  color:white;
+  transition: all 0.2s ease 0s;
+  text-shadow: 0px 0px 8px var(--accent-green);
+  font-size: large;
+  font-weight: bold;
+}
+.navlinkstyle:hover{
+  color:var(--hover-pink);
+  text-shadow: 0px 0px 8px var(--accent-pink);
+}
+
+#logo {
+  font-size: 1.8rem;
+  padding-left: 3vw;
+}
+
+.footercolor {
+  color: var(--accent-pink);
+  font-family: "Zain", sans-serif;
+  font-size: larger;
+}
+
+.inlinelink{
+  text-decoration: none;
+  color: var(--accent-pink);
+  font-weight: bold;
+}
+.inlinelink:hover{
+  color: var(--hover-pink);
+}
+
+.headerpink {
+  background-color: var(--hover-pink);
+  font-family: "Audiowide", sans-serif;
+  border-color: var(--accent-pink);
+  background-image: url("../images/ui-bg_diagonals-thick_30_f97fdb_40x40.png");
+}
+.bodypink {
+  border-color: var(--accent-pink);
+  background-image: 
+  linear-gradient(hsl(0, 0%, 100%), 20%, hsl(0, 0%, 100%), 80%, rgba(255, 255, 255, 0)),
+  url("../images/planetpattern2.png");
+}
+.accordionfontcolor {
+  color: rgb(185, 3, 146);
+  text-shadow: 0px 1px var(--accr-pink), 0px -1px var(--accr-pink), 1px 0px var(--accr-pink), -1px 0px var(--accr-pink), 0px 0px 6px var(--accr-pink);
+  font-weight: bold;
+}
+.accordionfontcolor:hover {
+  color: rgb(224, 42, 185);
+  text-shadow: 0px 1px var(--accr-pink), 0px -1px var(--accr-pink), 1px 0px var(--accr-pink), -1px 0px var(--accr-pink), 0px 0px 6px var(--accr-pink);
+  font-weight: bold;
+}
+
+a:active, a:focus {
+  outline: 0;
+  border: none;
+  -moz-outline-style: none;
+  outline-style: none;
+}
+
+@media (min-width: 320px) {
+  .navpadding {
+    padding: 5px 0px 5px 0px;
+  }
+}
+
+@media (min-width: 700px) {
+  .navpadding {
+    padding: 15px 0px 15px 0px;
+  }
+}
+
+@media (min-width: 1000px) {
+    .navpadding {
+    padding: 40px 0px 40px 0px;
+  }
+}
+
+.critter {
+ background-color: white;
+ max-width: 500px;
+ padding-top: 30px;
+ 
+ margin: auto;
+ border-radius: 30px;
+ filter: drop-shadow(0px 0px 10px #dfd08dc4);
+}
+.adoptboxtext{
+  color: var(--accent-pink);
+  max-width: 400px;
+  margin: auto;
+}
+.critter img  {
+  padding-bottom: 10px;
+}
+.critter p {
+  max-width: 400px;
+  margin: auto;
+  padding-bottom: 25px;
+  padding-top: 10px;
+}
+
+.speciesname {
+  font-family: 'Zain', sans-serif;
+  color: black;
+}
+
+.critterinput {
+  background-color: white;
+  max-width: 600px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  margin: auto;
+  border-radius: 30px;
+  filter: drop-shadow(0px 0px 10px #dfd08dc4);
+}
+
+.customButton {
+  background-color: var(--accent-pink);
+  border-color: var(--accent-pink);
+  color: white;
+}
