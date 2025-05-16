@@ -1,0 +1,9 @@
+body {
+  background-color: rgb(194, 194, 194);
+}
+
+.randnum {
+  font-size: xx-large;
+  padding-left: 20px;
+  font-weight: bolder;
+}
