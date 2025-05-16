@@ -1,0 +1,162 @@
+:root {
+  --mainblue: rgb(100, 171, 253);
+  --cardblue: rgb(131, 189, 255);
+  --headerblue: rgb(64, 132, 235);
+  --dropshadow: rgba(138, 183, 250, 0.555);
+  --dropshadowhover: rgba(44, 128, 255, 0.829);
+  --dropshadowhovericon: rgba(26, 105, 224, 0.808);
+  --textblue: rgb(53, 106, 187);
+}
+
+/*----------------------FONTS----------------------*/
+
+.lilita-one-regular {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.onest {
+  font-family: "Onest", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+/*------------------GLOBAL STYLES------------------*/
+
+.navcolor {
+  background-color: var(--mainblue);
+}
+
+.myname {
+  color: white;
+  padding-right: 20px;
+}
+.myname:hover {
+  color: #c2daf7;
+}
+
+.navstyle {
+  font-family: 'Lilita One', Georgia, sans-serif;
+  font-weight: 100;
+  font-size: larger;
+}
+
+.selfportrait {
+  filter: drop-shadow(0px 0px 10px var(--dropshadow));
+}
+
+body {
+  margin: 0px;
+  background-image: 
+  linear-gradient(hsla(0, 0%, 100%, 0), 20%, hsla(213, 100%, 86%, 0.288), 80%, rgba(197, 203, 255, 0.582));
+  background-attachment: fixed;
+}
+
+/*--------TABLE STYLING---------*/
+table, th, td {
+  border-collapse: collapse;
+  padding: 6px;
+  padding-right: 20px;
+  width: 100%;
+}
+
+th {
+  background-color: rgb(75, 152, 240);
+  font-family: 'Lilita One', Georgia, serif;
+  font-weight: 100;
+  padding: 10px;
+  color: white;
+}
+
+caption{
+  text-align: left;
+}
+
+td {
+  background-color: rgb(255, 255, 255);
+  font-family: 'Onest', Georgia, serif;
+  font-size: small;
+  color: rgb(10, 70, 160);
+}
+
+tr:nth-child(even) td{
+  background-color: rgb(225, 239, 255);
+}
+
+h1, h3 {
+  font-family: 'Lilita One', Georgia, sans-serif;
+  color: var(--headerblue);
+}
+
+p {
+  font-family: "Onest", sans-serif;
+  font-size: 1.1rem;
+  color: var(--textblue);
+}
+
+.footerstyle {
+  background-color: var(--mainblue);
+}
+
+footer p {
+  color: white;
+}
+
+.projectbox {
+  background-color: white;
+  border-radius: 30px;
+}
+
+.thumbnail {
+  border-radius: 30px;
+  filter: drop-shadow(0px 0px 10px var(--dropshadow));
+  -webkit-transition : -webkit-filter 500ms linear;
+  transition : -webkit-filter 200ms linear;
+}
+.thumbnail:hover {
+  filter: drop-shadow(0px 0px 12px var(--dropshadowhover));
+}
+
+.linkicon {
+  -webkit-transition : -webkit-filter 500ms linear;
+  transition : -webkit-filter 200ms linear;
+}
+.linkicon:hover {
+  filter: drop-shadow(0px 0px 10px var(--dropshadowhovericon));
+}
+
+.cardcolor {
+  background-color: var(--cardblue);
+}
+.cardoutline {
+  border: 1px solid var(--mainblue);
+}
+.cardtext {
+  color: white;
+}
+
+@media (min-width: 320px) {
+  .headerimage {
+    background-image: url('images/SleepingCatWelcome.gif');
+    background-size: cover;
+    height: 30vh;
+  }
+}
+
+@media (min-width: 700px) {
+  .headerimage {
+    background-image: url('images/SleepingCatWelcome.gif');
+    background-size: cover;
+    height: 50vh;
+  }
+}
+
+@media (min-width: 1000px) {
+  .headerimage {
+    background-image: url('images/SleepingCatWelcomeWide.gif');
+    background-size: cover;
+    height: 40vh;
+  }
+}
