@@ -1,0 +1,21 @@
+body {
+  background-color: rgb(194, 194, 194);
+}
+
+.fakeimg {
+  background-color: rgb(97, 97, 97);
+  width: 100%;
+  height: 400px;
+}
+
+.fakeimg2 {
+  background-color: rgb(59, 59, 59);
+  width: 100%;
+  height: 400px;
+}
+
+.fakeimg3 {
+  background-color: rgb(53, 53, 53);
+  width: 100%;
+  height: 400px;
+}
