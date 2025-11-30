@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
+  <title>Sarah Wilson - Web Design & Animation</title>
+</head>
+<body> 
+  <header>
+    <div class="overlay">
+      <span class="background-image" role="img" aria-label="Description of header image"></span>
+      <h1 class="title">Sarah Wilson</h1>
+      <h2>Web Design & Animation</h2>
+    </div>
+  </header>
+  <nav class="sticky">
+    <input type="checkbox" id="sidebar-active">
+    <label for="sidebar-active" class="open-sidebar-button">
+      <img src="images/iconmonstr-menu-circle-filled.svg" width="50">
+    </label>
+    <label id="overlay" for="sidebar-active"></label>
+    <div class="links-container">
+      <label for="sidebar-active" class="close-sidebar-button">
+        <img src="images/iconmonstr-x-mark-circle-filled.svg" width="50">
+      </label>
+      <a href="#about"><img src="images/cloudicon.png" width="30"> About</a>
+      <a href="#webdesign"><img src="images/cloudicon.png" width="30"> Web Design</a>
+      <a href="#animation"><img src="images/cloudicon.png" width="30"> Animation</a>
+      <a href="#contact"><img src="images/cloudicon.png" width="30"> Contact</a>
+    </div>
+  </nav>
+  <div class="wrapper">
+    <!----------ABOUT SECTION---------->
+    <section id="about">
+      <div class="container">
+        <div>
+          <h3>About Me</h3>
+          <p>
+            I’m a second year Software Development student at CWI.
+            <br>I have a passion for animation and illustration, which I hope to apply to creating engaging websites.
+          </p>
+        </div>
+        <img src="images/SelfPortrait.png" class="responsive">
+      </div>
+    </section>
+    <!-------WEB DESIGN SECTION-------->
+    <section id="webdesign">
+      <div class="container">
+        <div>
+          <h3>Web Design</h3>
+          <p>
+            Below are a collection of assignments I've completed at CWI.
+          </p>
+          <div class="showcase-container">
+            <div class="showcase">
+              <h4>Cosmic Critters</h4>
+              <a href="https://swwebdev.github.io/project4rebuiltwebsite/index.html" target="_blank">
+                <img src="images/thumbnails/cosmiccritters.png" class="thumbnail">
+              </a>
+              <p>A website for a fictional alien adoption agency. It utilizes Bootstrap and Vue.js.</p>
+            </div>
+            <div class="showcase">
+              <h4>Fastlane Cars</h4>
+              <a href="https://swwebdev.github.io/benchmark3/index.html#hero" target="_blank">
+                <img src="images/thumbnails/fastlane.png" class="thumbnail">
+              </a>
+              <p>Throughout the semester, we were challenged to build the same website in only 3 hours utilizing libraries and frameworks for efficiency. This is the final of those projects. It uses Bootstrap and Vue.js.</p>
+            </div>
+            <div class="showcase">
+              <h4>RocketQuest</h4>
+              <a href="https://swwebdev.github.io/rocketquest/index.html" target="_blank">
+                <img src="images/thumbnails/rocketquest.png" class="thumbnail">
+              </a>
+              <p>A website for a fictional video game made using Bootstrap.</p>
+            </div>
+            <div class="showcase">
+              <h4>RocketQuest Merch</h4>
+              <a href="https://swwebdev.github.io/vueapp/index.html" target="_blank">
+                <img src="images/thumbnails/rocketmerch.png" class="thumbnail">
+              </a>
+              <p>A fictional storefront with a shopping cart function created with Vue.js.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--------ANIMATION SECTION-------->
+    <section id="animation">
+      <div class="container">
+        <div>
+          <h3>Animation</h3>
+          <p>
+            On occasion I've done freelance animation work. Below are some examples.
+          </p>
+          <div class="showcase-container">
+          <div class="showcase">
+              <h4>CWI Computer Science or Software Development?</h4>
+              <a href="https://www.youtube.com/watch?v=lp6Qzud1tL4" target="_blank">
+                <img src="images/thumbnails/swdvcs.png" class="thumbnail">
+              </a>
+              <p>In 2024 I cooperated with professors in CWI's Software Development and Computer Science programs to create an informational video to help future students decide which program to apply for.</p>
+            </div>
+            <div class="showcase">
+              <h4>Idaho Myths, Monsters and Legends</h4>
+              <a href="https://www.pbs.org/video/idaho-myths-monsters-and-legends-zfrsj8/" target="_blank">
+                <img src="images/thumbnails/mythsmonsters.png" class="thumbnail">
+              </a>
+              <p>In 2022 I animated two short scenes for an episode of Idaho Experience on IPTV. My segments can be found at 22:10 and 23:35.</p>
+            </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!---------CONTACT SECTION--------->
+    <section id="contact">
+      <div class="container contact">
+        <div>
+          <h3>Contact</h3>
+          <form action="mailto:sarahwilson@my.cwi.edu?subject=Personal%20Portfolio%20Mail" enctype="text/plain" method="POST" onsubmit="return showAlert()">
+            <div class="form-container">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+              <label for="Company">Company:</label>
+              <input type="text" id="company" name="company" required>
+            </div>
+            <div class="form-container">
+              <textarea placeholder="Comments" id="message" name="message"></textarea>
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+          <script>
+            function showAlert() {
+              alert("Your message has been sent!");
+              return true;
+            }
+          </script>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer>
+      <p>View my work on Github</p>
+      <a href="https://github.com/swwebdev/swwebdev.github.io" target="_blank">
+        <img src="images/iconmonstr-github-3.svg" style="width: 50px;">
+      </a>
+  </footer>
+</body>
+</html>
