@@ -58,7 +58,7 @@ h1, h2, h3, h4 {
 }
 h1, h2 {
   color: var(--offwhite);
-  filter: drop-shadow(0px 0px 5px var(--navbar));
+  filter: drop-shadow(0px 0px 5px var(--menushadow));
 }
 h1 {
   font-size: 3rem;
@@ -288,4 +288,5 @@ button:hover {
   .wrapper {
     width: 90vw;
   }
+
 }
