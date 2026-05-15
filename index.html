@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Music Player Widget</title>
+</head>
+<body>
+  <div class="main">
+    <h1 style="padding-top: 50px;">Music Player Widget</h1>
+    <p style="padding-bottom: 20px;">
+      A nostalgic audio player for personal blogs
+    </p>
+    <div class="mplayer mplayer-steel">
+      <div class="mplayer-display" id="cover">
+        <h4 id="title">Title</h4>
+        <div class="progress-container">
+          <div class="progress"></div>
+        </div>
+        <audio src="music/Level1.wav" id="audio"></audio>
+        <audio src="music/meow.wav" id="cat-audio"></audio>
+      </div>
+      <div class="navigation">
+        <div class="ring">
+          <button id="prev" class="mplayer-button west">
+            <i class="fas fa-backward"></i>
+          </button>
+          <button id="play" class="mplayer-button south">
+            <i class="fas fa-play"></i>
+          </button>
+          <button id="next" class="mplayer-button east">
+            <i class="fas fa-forward"></i>
+          </button>
+          <button id="cat" class="mplayer-button north">
+            <i class="fas fa-cat"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="color-buttons">
+      <h3>Choose A Color</h3>
+      <button id="steel"></button>
+      <button id="pink"></button>
+      <button id="blue"></button>
+      <button id="lime"></button>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
