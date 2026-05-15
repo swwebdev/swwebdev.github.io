@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h4, h3, p {
+  font-family: "Catamaran", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(0deg,rgb(192, 192, 192) 25%, rgb(241, 241, 241) 90%);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mplayer {
+  padding: 15px;
+  border-radius: 15px;
+  width: 210px;
+  height: 300px;
+  box-shadow: 10px 10px 20px rgba(78, 78, 78, 0.473);
+}
+
+.mplayer-steel {
+  background: 
+  linear-gradient(90deg,rgba(111, 139, 150, 0.336) 0%, rgba(211, 224, 224, 0) 5%, rgba(211, 224, 224, 0) 95%, rgb(111, 139, 150, 0.336) 100%),
+  linear-gradient(180deg,rgba(206, 224, 224, 1) 0%, rgba(211, 224, 224, 1) 9%, rgba(177, 191, 196, 1) 74%, rgb(217, 227, 235) 97%, rgb(177, 185, 187));
+  border: 2px solid rgb(115, 127, 141);
+}
+.mplayer-steel button {
+  color: rgb(168, 183, 189);
+}
+.mplayer-steel button:hover {
+  color: rgb(215, 229, 231);
+}
+
+.mplayer-pink {
+  background: 
+  linear-gradient(90deg,rgba(173, 60, 113, 0.336) 0%, rgba(211, 224, 224, 0) 5%, rgba(211, 224, 224, 0) 95%, rgb(173, 60, 113, 0.336) 100%),
+  linear-gradient(180deg,rgb(241, 173, 219) 0%, rgb(236, 118, 187) 9%, rgb(201, 86, 149) 74%, rgb(241, 128, 194) 97%, rgb(216, 101, 155));
+  border: 2px solid rgb(187, 56, 128);
+}
+.mplayer-pink button {
+  color: rgb(201, 86, 149);
+}
+.mplayer-pink button:hover {
+  color: rgb(252, 173, 216);
+}
+
+.mplayer-blue {
+  background: 
+  linear-gradient(90deg,rgba(60, 100, 173, 0.336) 0%, rgba(211, 224, 224, 0) 5%, rgba(211, 224, 224, 0) 95%, rgba(60, 100, 173, 0.336) 100%),
+  linear-gradient(180deg,rgb(128, 196, 241) 0%, rgb(118, 179, 236) 9%, rgb(86, 140, 201) 74%, rgb(128, 196, 241) 97%, rgb(101, 160, 216));
+  border: 2px solid rgb(56, 117, 187);
+}
+.mplayer-blue button {
+  color: rgb(108, 177, 233);
+}
+.mplayer-blue button:hover {
+  color: rgb(173, 223, 252);
+}
+
+.mplayer-lime {
+  background: 
+  linear-gradient(90deg,rgba(60, 173, 69, 0.336) 0%, rgba(211, 224, 224, 0) 5%, rgba(211, 224, 224, 0) 95%, rgba(60, 173, 69, 0.336) 100%),
+  linear-gradient(180deg,rgb(164, 241, 128) 0%, rgb(142, 236, 118) 9%, rgb(96, 201, 86) 74%, rgb(164, 241, 128) 97%, rgb(128, 216, 101));
+  border: 2px solid rgb(56, 170, 45);
+}
+.mplayer-lime button {
+  color: rgb(95, 216, 90);
+}
+.mplayer-lime button:hover {
+  color: rgb(180, 252, 173);
+}
+
+.mplayer-display {
+  width: 180px;
+  height: 140px;
+  background-color: rgb(65, 71, 77);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border: 2px solid rgb(44, 50, 56);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.ring {
+  border: 30px solid white;
+  border-radius: 100px;
+  height: 110px;
+  width: 110px;
+  position: relative;
+}
+.mplayer-pink .ring {
+  filter: drop-shadow(0px 0px 10px rgb(207, 56, 149));
+}
+.mplayer-steel .ring {
+  filter: drop-shadow(0px 0px 10px rgb(142, 156, 167));
+}
+.mplayer-blue .ring {
+  filter: drop-shadow(0px 0px 10px rgb(56, 122, 207));
+}
+.mplayer-lime .ring {
+  filter: drop-shadow(0px 0px 10px rgb(74, 207, 56));
+}
+
+.mplayer-button {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0);
+  border: 0;
+  font-size: large;
+  cursor: pointer;
+}
+
+.north {
+  top: 0;
+  left: 50%;
+  transform: translate(-55%, -120%);
+}
+
+.east {
+  top: 50%;
+  right: 0;
+  transform: translate(120%, -50%);
+}
+
+.south {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 120%);
+}
+
+.west {
+  top: 50%;
+  left: 0;
+  transform: translate(-120%, -50%);
+}
+
+h4 {
+  background-color: rgba(255, 255, 255, 0.808);
+  border-radius: 50px;
+  padding: 1px 10px 0px 10px;
+  font-size: 0.9em;
+  max-width: 180px;
+}
+
+.progress-container {
+  background: white;
+  outline: 1px solid rgb(165, 165, 165);
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  height: 4px;
+  width: 90%;
+}
+
+.progress {
+  background-color: rgb(165, 165, 165);
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+.color-buttons {
+  padding-top: 40px;
+  text-align: center;
+}
+.color-buttons button {
+  padding: 15px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#steel {
+  background-color: rgb(158, 173, 179);
+  border-radius: 50%;
+  border: 2px solid rgb(85, 104, 117);
+}
+
+#pink {
+  background-color: rgb(230, 107, 178);
+  border-radius: 50%;
+  border: 2px solid rgb(153, 66, 114);
+}
+
+#blue {
+  background-color: rgb(107, 201, 230);
+  border-radius: 50%;
+  border: 2px solid rgb(66, 114, 153);
+}
+
+#lime {
+  background-color: rgb(146, 230, 107);
+  border-radius: 50%;
+  border: 2px solid rgb(66, 153, 80);
+}
